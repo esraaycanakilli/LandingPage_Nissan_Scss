@@ -1,0 +1,299 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap");
+footer .footer-links h2, .sol h1, #exterior h1, #interior h1 {
+  font-family: "Inter";
+  color: #252a34;
+}
+
+.sol h2, .sol p, #exterior p, #interior p {
+  color: #37393c;
+  font-size: 17px;
+}
+
+.cars-area button, .sol button, #exterior button, #interior button {
+  padding: 10px 20px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  border: none;
+  color: white;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+#exterior, #interior {
+  height: 60vh;
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+}
+#exterior h1, #interior h1 {
+  color: white;
+}
+#exterior p, #interior p {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 300;
+  max-width: 500px;
+  color: white;
+}
+#exterior button, #interior button {
+  border-radius: 0;
+  background-color: transparent;
+  border: 1px solid white;
+  transition: background-color 0.4s;
+  color: white;
+  padding: 15px 40px;
+}
+#exterior button:hover, #interior button:hover {
+  background-color: white;
+  color: black;
+  transition: all 0.4s;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #eaeaea;
+  font-family: "Poppins";
+  overflow-x: hidden;
+}
+
+img {
+  mix-blend-mode: darken;
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  position: relative;
+}
+header img {
+  width: 100px;
+}
+header nav {
+  display: flex;
+  align-items: center;
+}
+header nav a {
+  text-decoration: none;
+  color: #252a34;
+}
+header nav a:hover {
+  color: crimson;
+  transition: 0.5s all;
+}
+header #nav_left a {
+  padding: 0 20px;
+  border-right: 1px solid gray;
+}
+header #nav_left a:last-child {
+  border-right: none;
+}
+header #nav_right {
+  gap: 30px;
+  font-size: 15px;
+}
+@media (max-width: 800px) {
+  header #nav_right {
+    display: none;
+  }
+}
+header .opener {
+  display: none;
+  position: absolute;
+  right: 0;
+  bottom: -115px;
+  background-color: gray;
+  box-shadow: 2px 2px 10px;
+  flex-direction: column;
+  gap: 20px;
+  border-radius: 5px;
+  padding: 5px;
+}
+header .opener a {
+  text-decoration: none;
+  color: black;
+}
+header .menu {
+  width: 40px;
+  display: none;
+}
+@media (max-width: 800px) {
+  header .menu {
+    display: block;
+  }
+}
+header .menu:hover + .opener {
+  display: flex;
+}
+
+section {
+  display: flex;
+  justify-content: space-between;
+  padding: 50px 100px;
+  background: linear-gradient(rgb(215, 215, 215) 40%, #eaeaea 40%);
+}
+@media (max-width: 800px) {
+  section {
+    flex-direction: column;
+    align-items: center;
+    padding: 30px 40px;
+  }
+}
+
+.sol {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 35px;
+  max-width: 500px;
+}
+@media (max-width: 800px) {
+  .sol {
+    gap: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .sol h1 {
+    text-align: center;
+  }
+}
+.sol h1 span {
+  font-family: "Times New Roman", Times, serif;
+}
+.sol img {
+  width: 200px;
+  mix-blend-mode: darken;
+}
+.sol button {
+  background-color: crimson;
+}
+.sol button:hover {
+  background-color: rgb(168, 16, 46);
+  transition: all 0.4s;
+}
+
+.sag {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+}
+.sag-banner {
+  max-width: 600px;
+}
+@media (max-width: 800px) {
+  .sag-banner {
+    max-width: 400px;
+  }
+}
+.sag-track {
+  max-width: 300px;
+}
+@media (max-width: 800px) {
+  .sag-track {
+    max-width: 200px;
+  }
+}
+.sag p {
+  max-width: 300px;
+  text-align: center;
+}
+@media (max-width: 800px) {
+  .sag p {
+    max-width: 200px;
+  }
+}
+
+#interior {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.5), black), url("/images/interior.jpg");
+}
+
+#exterior {
+  background-image: radial-gradient(rgba(0, 0, 0, 0.3), black), url("/images/exterior-4.jpg");
+}
+#exterior p {
+  font-size: 17px;
+}
+@media (max-width: 800px) {
+  #exterior p {
+    font-size: 15px;
+  }
+}
+
+.cars-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px 0;
+}
+.cars-area .cars {
+  display: flex;
+}
+@media (max-width: 800px) {
+  .cars-area .cars {
+    flex-direction: column;
+  }
+}
+.cars-area .cars img {
+  width: 300px;
+}
+.cars-area .cars h3 {
+  text-align: center;
+}
+.cars-area button {
+  background-color: aqua;
+  margin-top: 50px;
+}
+.cars-area button:hover {
+  background-color: rgb(0, 180, 180);
+}
+
+footer {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #252a34;
+  padding: 50px;
+}
+@media (max-width: 800px) {
+  footer {
+    flex-direction: column;
+    gap: 40px;
+  }
+}
+footer img {
+  width: 60px;
+  height: 90px;
+  mix-blend-mode: unset;
+}
+footer .footer-links {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  color: white;
+}
+@media (max-width: 800px) {
+  footer .footer-links {
+    align-items: center;
+  }
+}
+footer .footer-links h2 {
+  color: white;
+}
+footer .footer-links a {
+  color: white;
+  text-decoration: none;
+}/*# sourceMappingURL=style.css.map */
